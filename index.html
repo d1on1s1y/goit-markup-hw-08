@@ -21,8 +21,8 @@
     />
   </head>
   <body data-page>
-   <header class="header">
-      <div class="container header__container">
+   <header class="">
+      <div class="container header">
         <button class="mobile-menu-btn" type="button" data-menu-button>
              <svg class="mobile-menu-icon" width="24" height="16">
                  <use class="mobile-menu-burger" href="./images/icons.svg#icon-menu"></use>
@@ -106,7 +106,7 @@
         </ul>
     </div>
     <main>
-      <!-- <section class="hero hero__img">
+       <section class="hero hero__img">
         <div class="container">
          
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -114,7 +114,7 @@
             Заказать услугу
           </button>
         </div>
-      </section> -->
+      </section>
 
       <section class="benefits">
         <div class="container">
@@ -205,12 +205,27 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
+              <picture>
+                <source
+                media="(max-width:767px)"
+                srcset="./images\team\igor-demyanenko@1x_mob.jpg 1x, images\team\igor-demyanenko@2x_mob.jpg 2x"
+                type="image/jpg">
+                <source
+                media="(max-width:1199px)"
+                srcset="./images\team\igor-demyanenko@1x_tab.jpg 1x, images\team\igor-demyanenko@2x_tab.jpg 2x"
+                type="image/jpg">
+                <source
+                media="(min-width:1200px)"
+                srcset="./images\team\igor-demyanenko@1x_desk.jpg 1x, images\team\igor-demyanenko@2x_desk.jpg 2x"
+                type="image/jpg">
               <img
-                src="images/team/igor-demyanenko.jpg.jpg"
+
+                src="./images/team/igor-demyanenko@1x_mob.jpg"
                 alt="Белый мужчина с темными волосами и бородой в очках и бордовой рубашке"
-                width="270"
+                width="450"
                 class="team__img"
               />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__paragraph">Product Designer</p>
@@ -247,12 +262,26 @@
               </div>
             </li>
             <li class="team__item">
+              <picture>
+                <source
+                media="(max-width:767px)"
+                srcset="./images\team\olga-repina@1x_mob.jpg 1x, images\team\olga-repina@2x_mob.jpg 2x"
+                type="image/jpg">
+                <source
+                media="(max-width:1199px)"
+                srcset="./images\team\olga-repina@1x_tab.jpg 1x, images\team\olga-repina@2x_tab.jpg 2x"
+                type="image/jpg">
+                <source
+                media="(min-width:1200px)"
+                srcset="./images\team\olga-repina@1x_desk.jpg 1x, images\team\olga-repina@2x_desk.jpg 2x"
+                type="image/jpg">
               <img
-                src="images/team/olga-repina.jpg.jpg"
+                src="./images/team/olga-repina@1x_mob.jpg"
                 alt="Белая женщиина со светлыми волосами и в очках и черном пиджаке"
-                width="270"
+                width="450"
                 class="team__img"
               />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__paragraph">Frontend Developer</p>
@@ -289,12 +318,26 @@
               </div>
             </li>
             <li class="team__item">
+              <picture>
+                <source
+                media="(max-width:767px)"
+                srcset="./images\team\nikolay-tarasov@1x_mob.jpg 1x, images\team\nikolay-tarasov@2x_mob.jpg 2x"
+                type="image/jpg">
+                <source
+                media="(max-width:1199px)"
+                srcset="./images\team\nikolay-tarasov@1x_tab.jpg 1x, images\team\nikolay-tarasov@2x_tab.jpg 2x"
+                type="image/jpg">
+                <source
+                media="(min-width:1200px)"
+                srcset="./images\team\nikolay-tarasov@1x_desk.jpg 1x, images\team\nikolay-tarasov@2x_desk.jpg 2x"
+                type="image/jpg">
               <img
-                src="images/team/nikolay-tarasov.jpg.jpg"
+                src="./images/team/nikolay-tarasov@1x_mob.jpg"
                 alt="Белый мужчина с русыми волосами и бородой в светлоголубой руюашке "
-                width="270"
+                width="450"
                 class="team__img"
               />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__paragraph">Marketing</p>
@@ -331,12 +374,26 @@
               </div>
             </li>
             <li class="team__item">
+              <picture>
+                <source
+                media="(max-width:767px)"
+                srcset="./images\team\mikhail-ermakov@1x_mob.jpg 1x, images\team\mikhail-ermakov@2x_mob.jpg 2x"
+                type="image/jpg">
+                <source
+                media="(max-width:1199px)"
+                srcset="./images\team\mikhail-ermakov@1x_tab.jpg 1x, images\team\mikhail-ermakov@2x_tab.jpg 2x"
+                type="image/jpg">
+                <source
+                media="(min-width:1200px)"
+                srcset="./images\team\mikhail-ermakov@1x_desk.jpg 1x, images\team\mikhail-ermakov@2x_desk.jpg 2x"
+                type="image/jpg">
               <img
-                src="images/team/mikhail-ermakov.jpg.jpg"
+                src="./images/team/mikhail-ermakov@1x_mob.jpg"
                 alt="Белый мужчина с темными волосами и бородой в очках и черной футболке"
-                width="270"
+                width="450"
                 class="team__img"
               />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__paragraph">UI Designer</p>

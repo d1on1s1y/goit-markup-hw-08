@@ -22,10 +22,15 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1, 17;
+  }
 }
 
 .modal-check:checked + .checkbox__box {
@@ -49,6 +54,10 @@
 .checkbox__link {
   text-decoration-line: underline;
   color: var(--animation-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .chekbox_icon {
