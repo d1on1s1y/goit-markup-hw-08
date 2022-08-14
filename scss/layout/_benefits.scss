@@ -18,7 +18,10 @@
 .benefits__li {
   max-width: 450px;
   margin-bottom: 30px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
     width: 270px;
   }
 }

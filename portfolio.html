@@ -23,14 +23,19 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <!--Логотип-->
+        <button class="mobile-menu-btn" type="button" data-menu-button>
+             <svg class="mobile-menu-icon" width="24" height="16">
+                 <use class="mobile-menu-burger" href="./images/icons.svg#icon-menu"></use>
+                 <use class="mobile-menu-close" href="./images/icons.svg#icon-close"></use>
+             </svg>
+        </button>
         <a href="./index.html" class="logo"
           ><span class="logo-beginning">Web</span
           ><span >Studio</span></a
         >
-        <!-- Навигация -->
-        <nav>
-          <ul class="nav">
+        
+        <nav class="nav">
+          <ul class="header__list">
             <li class="nav__item">
               <a href="./index.html" class="nav__link  ">Студия</a>
             </li>
@@ -63,6 +68,43 @@
         </ul>
       </div>
     </header>
+         <div class="mobile-menu" data-menu>
+        <ul class="mobile-menu-nav list">
+            <li class="mobile-menu-nav-item">
+                <a class="mobile-menu__link" href="index.html">Студия </a>
+            </li>
+            <li class="mobile-menu-nav-item">
+                <a class="mobile-menu__link current" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu-nav-item">
+                <a class="mobile-menu__link" href="">Контакты</a>
+            </li>
+        </ul>
+
+        <ul class="mobile-menu-contacts list">
+            <li class="mobile-menu-contacts-item">
+                <a class="mobile-menu__contacts__tel accent" href=""> +38 096 111 11 11 </a>
+            </li>
+            <li class="mobile-menu-contacts-item">
+                <a class="mobile-menu__contacts__mail" href="">info@devstudio.com</a>
+            </li>
+        </ul>
+
+        <ul class="mobile-menu-socials list">
+            <li class="mobile-menu-socials-item">
+                <a class="mobile-menu-socials-link link" href=""> Instagram </a>
+            </li>
+            <li class="mobile-menu-socials-item">
+                <a class="mobile-menu-socials-link link" href="">Twitter</a>
+            </li>
+            <li class="mobile-menu-socials-item">
+                <a class="mobile-menu-socials-link link" href="">Facebook</a>
+            </li>
+            <li class="mobile-menu-socials-item">
+                <a class="mobile-menu-socials-link link" href="">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
     <main>
       <!--Категории портфолио-->
       <section class="portfolio">
@@ -91,7 +133,7 @@
             <li class="portfolio__item">
               <div class="portfolio__thumb">
                 <img
-                  src="./images/portfolio-img-1.jpg"
+                  src="./images/portfolio/portfolio-img-1.jpg"
                   alt="Ноутбук"
                   width="370"
                 />
@@ -111,7 +153,7 @@
             <li class="portfolio__item">
               <div class="portfolio__thumb">
                 <img
-                  src="./images/portfolio-img-2.jpg"
+                  src="./images/portfolio/portfolio-img-2.jpg"
                   alt="Игра в баскетбол"
                   width="370"
                 />
@@ -133,7 +175,7 @@
             <li class="portfolio__item">
               <div class="portfolio__thumb">
                 <img
-                  src="./images/portfolio-img-3.jpg"
+                  src="./images/portfolio/portfolio-img-3.jpg"
                   alt="Логотип с рыбой"
                   width="370"
                 />
@@ -153,7 +195,7 @@
             <li class="portfolio__item">
               <div class="portfolio__thumb">
                 <img
-                  src="./images/portfolio-img-4.jpg"
+                  src="./images/portfolio/portfolio-img-4.jpg"
                   alt="Наушники"
                   width="370"
                 />
@@ -173,7 +215,7 @@
             <li class="portfolio__item">
               <div class="portfolio__thumb">
                 <img
-                  src="./images/portfolio-img-5.jpg"
+                  src="./images/portfolio/portfolio-img-5.jpg"
                   alt="Коробки"
                   width="370"
                 />
@@ -193,7 +235,7 @@
             <li class="portfolio__item">
               <div class="portfolio__thumb">
                 <img
-                  src="./images/portfolio-img-6.jpg"
+                  src="./images/portfolio/portfolio-img-6.jpg"
                   alt="Монитор"
                   width="370"
                 />
@@ -213,7 +255,7 @@
             <li class="portfolio__item">
               <div class="portfolio__thumb">
                 <img
-                  src="./images/portfolio-img-7.jpg"
+                  src="./images/portfolio/portfolio-img-7.jpg"
                   alt="Книга"
                   width="370"
                 />
@@ -233,7 +275,7 @@
             <li class="portfolio__item">
               <div class="portfolio__thumb">
                 <img
-                  src="./images/portfolio-img-8.jpg"
+                  src="./images/portfolio/portfolio-img-8.jpg"
                   alt="Бирка"
                   width="370"
                 />
@@ -253,7 +295,7 @@
             <li class="portfolio__item">
               <div class="portfolio__thumb">
                 <img
-                  src="./images/portfolio-img-9.jpg"
+                  src="./images/portfolio/portfolio-img-9.jpg"
                   alt="Печать на ноутбуке"
                   width="370"
                 />
@@ -275,19 +317,18 @@
       </section>
     </main>
     <!--Подвал сайта-->
-    <footer class="footer">
+     <footer class="footer">
       <div class="container footer__section">
         <div>
-          <!--Логотип-->
-             <a href="./index.html" class="logo logo-reverse"
+             
+          <address class="footer__address">
+            <a href="./index.html" class="logo logo-reverse footer__logo"
               ><span class="logo-beginning">Web</span
               ><span >Studio</span></a
             >
-          <!--адреса-->
-          <address>
             <ul class="address__list">
               <li class="address__item">
-                г. Киев, пр-т Леси Украинки, 26
+                <p class="footer__paragraph">г. Киев, пр-т Леси Украинки, 26</p>
               </li>
               <li class="address__item">
                 <a href="mailto:info@devstudio.com" class="address__link"
@@ -302,38 +343,38 @@
             </ul>
           </address>
         </div>
-        <div>
-          <h3 class="footer__title">присоединяйтесь</h3>
-          <ul class="footer__socials ">
-            <li>
-              <a href="" class="footer__social-link">
-                <svg width="20" height="20" class="footer__social-icon">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="footer__social-link">
-                <svg width="20" height="20" class="footer__social-icon">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="footer__social-link">
-                <svg width="20" height="20" class="footer__social-icon">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="footer__social-link">
-                <svg width="20" height="20" class="footer__social-icon">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="footer__socials">
+        <h3 class="footer__title">присоединяйтесь</h3>
+            <ul class="social">
+                <li class="social-media__item">
+                    <a class="social__link footer__social-link" href="">
+                        <svg class="social__icon footer__icon" width="20" height="20">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-media__item">
+                    <a class="social__link footer__social-link" href="">
+                        <svg class="social__icon footer__icon" width="20" height="20">
+                         <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-media__item">
+                    <a class="social__link footer__social-link" href="">
+                        <svg class="social__icon footer__icon" width="20" height="20">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-media__item">
+                    <a class="social__link footer__social-link" href="">
+                        <svg class="social__icon footer__icon" width="20" height="20">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>     
         </div>
         <div class="subscribe">
           <p class="footer__title">Подпишитесь на рассылку</p>
@@ -357,5 +398,6 @@
         </div>
       </div>
     </footer>
+        <script src="./js/menu.js"></script>
   </body>
 </html>
