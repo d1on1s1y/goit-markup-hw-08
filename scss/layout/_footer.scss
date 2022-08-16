@@ -25,7 +25,7 @@
 .footer__address {
   display: block;
   justify-content: center;
-
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
@@ -34,10 +34,11 @@
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
+    margin-right: 70px;
   }
 }
 .footer__paragraph {
-  color: var(--header-bg-color);
+  color: #ffffff;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -52,7 +53,7 @@
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  padding-right: 70px;
+
   @media screen and (min-width: 1200px) {
     text-align: start;
   }
@@ -80,17 +81,19 @@
   }
 }
 .footer__socials {
-  margin-top: 60px;
   margin-bottom: 60px;
 
   @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: 165px;
     margin-top: 0;
     margin-bottom: 0;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-left: 70px;
+    margin-right: 93px;
   }
 }
 .footer__icon {
